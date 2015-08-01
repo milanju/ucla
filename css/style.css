@@ -17,10 +17,6 @@
   background-color: #448aff;
 }
 
-#news-slider {
-  height: 100px;
-}
-
 #index-banner {
   background-color: #141414;
 }
@@ -29,11 +25,12 @@
   text-shadow: 2px 2px #000;
 }
 
-.news-slider-link {
-  color: white;
+.banner-line {
+  margin-top: 30px;
 }
 
-.banner-container {
+.news-slider-link {
+  color: white;
 }
 
 .read-more-win-body {
