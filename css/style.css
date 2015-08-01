@@ -6,6 +6,11 @@
  * Made By MaterializeCSS.com
  */
 
+.head1 {
+  font-size: 2em;
+
+}
+
 .icon-block {
   padding: 0 15px;
 }
@@ -19,10 +24,6 @@
 
 #index-banner {
   background-color: #141414;
-}
-
-.banner-text {
-  text-shadow: 2px 2px #000;
 }
 
 .banner-line {
