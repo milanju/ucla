@@ -93,5 +93,7 @@ ul.bullet-ul li {
 
 footer.page-footer {
   margin-top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #141414
 }
