@@ -42,10 +42,6 @@ html {
   margin-bottom: 0;
 }
 
-.banner-line {
-  margin-top: 30px;
-}
-
 .news-slider-link {
   color: white;
 }
@@ -74,12 +70,9 @@ html {
   display: none;
 }
 
-.banner-text {
-  vertical-align: top;
-}
-
-.banner-text-wrapper {
-  min-height: 20px;
+.banner-text-col {
+  min-height: 40px;
+  text-align: center;
 }
 
 ul.bullet-ul {
