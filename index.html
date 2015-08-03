@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
 
@@ -17,13 +18,20 @@
     <div class="container banner-container">
       <div class="row banner-row">
         <div class="col s12 l8 logo">
-          <a href="./" class="white-text">
-          <span class="logo-top">Neuromodulation</span>
-          <br>
-          <span class="logo-middle">Division</span>
-          <br>
-          <span class="logo-bottom">At the UCLA Semel Institute</span>
-          </a>
+          <div class="row">
+            <a href="./" class="col logo-img center">
+              <img class="responsive-img" src="../img/logo.png">
+            </a>
+            <a href="./" class="col white-text">
+              <span class="logo-top">
+                Neuromodulation
+                <br>
+                Division
+              </span>
+              <br>
+              <span class="logo-bottom">At the UCLA Semel Institute</span>
+            </a>
+          </div>
         </div>
         <div class="col s12 l4">
           <div class="slider-container">
@@ -87,12 +95,30 @@
             </div>
           </div>
         </div>
-        <div class="col s12 banner-text-col">
-          <div class="">
-            <h6 class="banner-text center-align white-text">
-              Creating innovative solutions for patients
-              with <span id="illness-ticker">depression</span> and other neuropsychiatric illnesses.
-            </h6>
+        <!--<div class="col s12">
+          <h6 class="banner-text flow-text white-text">
+            Creating innovative solutions for patients
+            with <div class="span-container flow-text"><span id="illness-ticker">depression</span></div><br>& other neuropsychiatric illnesses.
+          </h6>
+        </div>-->
+        <div class="col s12">
+          <div class="rw-wrapper flow-text">
+          	<h6 class="rw-sentence flow-text">
+          		<span>Creating innovative solutions for patients with</span>
+          		<div class="rw-words rw-words-1">
+          			<span>DEPRESSION</span>
+          			<span>EPILEPSY</span>
+          			<span>PTSD</span>
+          			<span>DEPRESSION</span>
+          			<span>PARKINSON'S DISEASE</span>
+          			<span>OCD</span>
+                <span>DEPRESSION</span>
+                <span>ANXIETY DISORDER</span>
+                <span>ALZHEIMERS</span>
+          		</div>
+              <br>
+              <span>& other neuropsychiatric illnesses.</span>
+          	</h6>
           </div>
         </div>
       </div>
@@ -111,41 +137,19 @@
             to learn more about the expanding field of neuromodulation.
           </p>
         </div>
-        <div class="col s12 m6">
-          <div class="card-panel blue-grey lighten-5">
-            <div class="row valign-wrapper">
-              <div class="col s3">
-                <img src="http://www.keita-gaming.com/assets/profile/default-avatar-c5d8ec086224cb6fc4e395f4ba3018c2.jpg" alt="" class="circle responsive-img">
-              </div>
-              <div class="col s9">
-                <span class="black-text">
-                  Andrew Leuchter, M.D.<br>
-                  Director
-                </span>
-              </div>
-            </div>
-          </div>
+        <div class="col s12 m6 center">
+          Andrew Leuchter, M.D.<br>
+          Director
         </div>
-        <div class="col s12 m6">
-          <div class="card-panel blue-grey lighten-5">
-            <div class="row valign-wrapper">
-              <div class="col s3">
-                <img src="http://www.keita-gaming.com/assets/profile/default-avatar-c5d8ec086224cb6fc4e395f4ba3018c2.jpg" alt="" class="circle responsive-img">
-              </div>
-              <div class="col s9">
-                <span class="black-text">
-                  Nanthia Suthana, Ph.D.<br>
-                  Associate Director
-                </span>
-              </div>
-            </div>
-          </div>
+        <div class="col s12 m6 center">
+          Nanthia Suthana, Ph.D.<br>
+          Associate Director
         </div>
       </div>
 
     </div>
   </div>
-  <div class="section blue-grey darken-3 white-text">
+  <div class="section dark-blue white-text">
     <div class="container">
       <div class="row">
         <div class="col s12 center">
@@ -168,7 +172,7 @@
         </div>
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center teal-text text-darken-3">
+            <h2 class="center blue-text text-darken-3">
               <i class="fa fa-user"></i>
             </h2>
             <div class="center">
@@ -178,7 +182,7 @@
         </div>
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center teal-text text-darken-3">
+            <h2 class="center blue-text text-darken-3">
               <i class="fa fa-users"></i>
             </h2>
             <div class="center">
@@ -188,7 +192,7 @@
         </div>
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center teal-text text-darken-3">
+            <h2 class="center blue-text text-darken-3">
               <i class="fa fa-book"></i>
             </h2>
             <div class="center">
@@ -200,14 +204,16 @@
     </div>
   </div>
 
-  <div class="section blue-grey darken-3 white-text">
+  <div class="section dark-blue white-text">
     <div class="container">
       <div class="row">
         <div class="col s12 center">
           <h4>What is Neuromodulation?</h4>
           <p class="left-align">
             Neuromodulation is a process that modifies the natural signals sent among
-            groups of neurons in the brain. <a href="#" onclick="return false;" class="read-more-win-open">Read More...</a> <a href="" onclick="return false;" class="read-more-win-close">Read Less...</a>
+            groups of neurons in the brain.
+            <a href="#" onclick="return false;" class="read-more-win-open btn btn-small">Read More...</a>
+            <a href="" onclick="return false;" class="read-more-win-close btn btn-small">Read Less...</a>
           </p>
           <p class="left-align read-more-win-body">
             Neuromodulation is distinct from neurotransmission, which is the direct
@@ -232,8 +238,11 @@
             Neuromodulation treatments are an emerging class of technologies that apply
             magnetic or electrical energy to the brain to treat depression, epilepsy,
             Obsessive-Compulsive Disorder, Parkinson's Disease, and other
-            neuropsychiatric illnesses. <a href="#" onclick="return false;" class="read-more-treatments-open">Read More...</a> <a href="#" onclick="return false;" class="read-more-treatments-close">Read Less...</a>
+            neuropsychiatric illnesses.
+            <a href="#" onclick="return false;" class="read-more-treatments-open btn btn-small">Read More...</a>
+            <a href="#" onclick="return false;" class="read-more-treatments-close btn btn-small">Read Less...</a>
           </p>
+
           <p class="left-align read-more-treatments-body">
             Neuromodulation treatments can be used as either an alternative or an addition
             to medications for the treatment of illness. These cutting edge technologies
@@ -245,7 +254,7 @@
             synchronized transcranial magnetic stimulation(sTMS). Invasive techniques include deep brain
             stimulation(DBS) and electrocortical stimulation. Treatments frequently
             are targeted to stimulate brain regions specific to individuals' illness, but also
-            may be applied to the brain as a whole. (<a href="#">read more...</a>)<br>
+            may be applied to the brain as a whole. <a href="#">Click for more information.</a><br>
             Regardless of the method, neuromodulation signals rapidly through brain networks,
             affecting multiple structures systems beyond the targeted region. this
             applied electromagnetic energy shares the common effect of increasing
@@ -257,7 +266,7 @@
     </div>
   </div>
 
-  <div class="section blue-grey darken-3 white-text">
+  <div class="section dark-blue white-text">
     <div class="container">
       <div class="row">
         <div class="col s12 center">
@@ -267,8 +276,8 @@
             bring together leading faculty from Psychiatry, Neurosurgery, Neurology, and
             Engineering to utilize and develop individualized treatment approaches for
             psychiatric and neurological disorders.
-            <a href="#" onclick="return false;" class="read-more-why-open">Read More...</a>
-            <a href="#" onclick="return false;" class="read-more-why-close">Read Less...</a>
+            <a href="#" onclick="return false;" class="read-more-why-open btn btn-small">Read More...</a>
+            <a href="#" onclick="return false;" class="read-more-why-close btn btn-small">Read Less...</a>
           </p>
           <div class="left-align read-more-why-body">
             The Neuromodulation Division of the UCLA Semel Institute:
@@ -293,7 +302,8 @@
           <h4>Faculty</h4>
         </div>
         <div class="col s12 m6">
-          <div class="card-panel blue-grey lighten-5">
+          <center>
+          <div class="card-panel">
             <div class="row valign-wrapper">
               <div class="col s3">
                 <img src="http://www.keita-gaming.com/assets/profile/default-avatar-c5d8ec086224cb6fc4e395f4ba3018c2.jpg" alt="" class="circle responsive-img">
@@ -306,21 +316,24 @@
               </div>
             </div>
           </div>
+          </center>
         </div>
-        <div class="col s12 m6">
-          <div class="card-panel blue-grey lighten-5">
-            <div class="row valign-wrapper">
-              <div class="col s3">
-                <img src="http://www.keita-gaming.com/assets/profile/default-avatar-c5d8ec086224cb6fc4e395f4ba3018c2.jpg" alt="" class="circle responsive-img">
-              </div>
-              <div class="col s9">
-                <span class="black-text">
-                  Nanthia Suthana, Ph.D.<br>
-                  Associate Director
-                </span>
+        <div class="col s12 m6 container">
+          <center>
+            <div class="card-panel">
+              <div class="row valign-wrapper">
+                <div class="col s3">
+                  <img src="http://www.keita-gaming.com/assets/profile/default-avatar-c5d8ec086224cb6fc4e395f4ba3018c2.jpg" alt="" class="circle responsive-img">
+                </div>
+                <div class="col s9">
+                  <span class="black-text">
+                    Nanthia Suthana, Ph.D.<br>
+                    Associate Director
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
+          </center>
         </div>
         <div class="col s12 m4 center">
           Faculty Member
@@ -380,13 +393,13 @@
     </div>
   </div>
 
-  <div class="section blue-grey darken-3 white-text">
+  <div class="section dark-blue white-text">
     <div class="container">
       <div class="row">
         <div class="col s12 center">
           <h4>Frequently Asked Questions</h4>
           <div class="center">
-            <a href="http://wheresmyhippo.com/research/wordpress/?wordpress/?page_id=280" class="waves-effect waves-light btn-large">
+            <a href="http://wheresmyhippo.com/research/wordpress/?wordpress/?page_id=280" class="waves-effect waves-light btn-large btn-faq">
               FAQ
             </a>
           </div>

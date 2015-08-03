@@ -8,7 +8,7 @@
   });
 
   // Banner sentence illness ticker
-  $(function(){
+  /*$(function(){
     var words = [
       "depression",
       "epilepsy",
@@ -21,12 +21,12 @@
       "Alzheimers"
       ], i = 0;
     setInterval(function(){
-      $('#illness-ticker').toggle("slide", function(){
-        $(this).html(words[i=(i+1)%words.length]).toggle("slide");
+      $('#illness-ticker').fadeOut("slow", function(){
+        $(this).html(words[i=(i+1)%words.length]).fadeIn("slow");
       });
     }, 4000);
 
-  });
+  });*/
 
   // Read more button, "What is Neuromodulation?"
   $(function() {
