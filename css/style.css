@@ -7,7 +7,7 @@
  */
 
 html {
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
 }
 
 .btn, .btn-large {
@@ -18,8 +18,30 @@ html {
   background-color: #1976d2;
 }
 
+
 .section {
   background-color: #ECEFF1;
+}
+
+.slides {
+  background-color: #ECEFF1 !important;
+  color: black;
+}
+
+.news-label {
+  background-color: #24272F !important;
+  text-align: center;
+  color: #64b5f6;
+  font-weight: bold;
+}
+
+.caption {
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+.news-slider-link {
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .logo {
@@ -31,15 +53,37 @@ html {
   max-width: 200px !important;
 }
 
-.logo-top {
+.logo-top, .logo-middle {
   font-size: 3rem;
   line-height: 3rem;
+  text-shadow: 3px 3px #505050;
 }
 
-@media screen and (max-width: 1150px){
-	.logo-top {
-    font-size: 2rem;
-    line-height: 2rem;
+.logo-top {
+  font-weight: bold;
+}
+
+.logo-middle {
+  font-weight: 300 !important;
+}
+
+@media screen and (max-width: 600px){
+	.logo-text {
+    text-align: center;
+   }
+}
+
+@media screen and (max-width: 1500px){
+	.logo-top, .logo-middle {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+   }
+}
+
+@media screen and (max-width: 1220px){
+	.logo-top, .logo-middle {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
    }
 }
 .icon-block {
@@ -73,9 +117,6 @@ html {
   display: inline-block;
 }
 
-.news-slider-link {
-  color: white;
-}
 
 .read-more-win-body, .read-more-why-body, .read-more-why-close {
   display: none;
