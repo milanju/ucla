@@ -27,7 +27,8 @@ html {
 }
 
 .logo-img {
-  width: 160px;
+  min-width: 120px;
+  max-width: 200px !important;
 }
 
 .logo-top {
