@@ -125,26 +125,17 @@ footer.page-footer {
   padding-bottom: 2px;
 }
 
-.btn-faq {
-  background-color: #ff6f00;
-  color: #000;
-}
-
-.btn-faq:hover {
-  background-color: #ff8f00;
-}
-
 /*Banner Text Ticker*/
 .rw-wrapper {
 	position: relative;
 }
 .rw-sentence{
 	margin: 0;
-	text-align: left;
 }
 .rw-sentence span{
 	color: #FFF;
 	font-weight: normal;
+  font-size: 90%;
 }
 .rw-words{
 	display: inline;
@@ -153,6 +144,7 @@ footer.page-footer {
 	position: absolute;
 	opacity: 0;
 	overflow: hidden;
+  font-size: 100%;
 	color: #ff5252;
   text-shadow: 0px 2px 3px #000;
   font-weight: bold;
