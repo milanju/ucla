@@ -10,6 +10,64 @@ html {
   font-family: 'Lato', sans-serif;
 }
 
+.nav {
+  padding: 0;
+}
+
+.nav-btn-wrapper {
+  display: inline-block;
+  margin-left: -4px;
+  margin-right: -4px;
+  margin-bottom: -5px;
+}
+.nav-btn {
+  display: table;
+  text-align: center;
+  padding-top: auto;
+  padding-bottom: auto;
+  height: 60px;
+  overflow: hidden;
+}
+
+.nav-link {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #EEE;
+}
+
+.mobile-link {
+  padding: 0 !important;
+}
+
+.waves-effect.waves-blue .waves-ripple {
+  background-color: rgba(21, 101, 192, 0.65);
+}
+
+.nav-btn:hover {
+  background-color: #1C1F25;
+}
+
+@media screen and (max-width: 800px) {
+    .hide-on-small {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .hide-on-big {
+        display: none !important;
+    }
+}
+
+.mobile-nav {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #FFF;
+}
+
 .btn, .btn-large {
   background-color: #1565C0;
 }
@@ -17,7 +75,6 @@ html {
 .btn:hover, .btn-large:hover{
   background-color: #1976d2;
 }
-
 
 .section {
   background-color: #ECEFF1;
@@ -35,14 +92,19 @@ html {
   font-weight: bold;
 }
 
-.caption {
-  margin-top: -20px;
-  margin-bottom: -20px;
+.news-author {
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .news-slider-link {
   color: rgba(0, 0, 0, 0.87);
 }
+
+.caption {
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
 
 .logo {
   margin-bottom: 10px;
@@ -166,6 +228,39 @@ footer.page-footer {
   padding-bottom: 2px;
 }
 
+/*Nav Buttons*/
+.hvr-underline-from-center {
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #2098d1;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
 /*Banner Text Ticker*/
 .rw-wrapper {
 	position: relative;
@@ -186,7 +281,7 @@ footer.page-footer {
 	opacity: 0;
 	overflow: hidden;
   font-size: 100%;
-	color: #ff5252;
+	color: #ffe522;
   text-shadow: 0px 2px 3px #000;
   font-weight: bold;
 	-webkit-animation: rotateWord 27s linear infinite 0s;

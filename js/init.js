@@ -3,7 +3,7 @@
   $(function(){
     $('.button-collapse').sideNav();
     $(document).ready(function(){
-          $('.slider').slider({full_width: true, height: 120});
+          $('.slider').slider({full_width: true, height: 160});
     });
   });
 
@@ -75,3 +75,14 @@
       });
     });
 })(jQuery);
+
+// Scroll Nav
+$(document).ready(function (){
+  $(".scroll-link").click(function (){
+    var target = $(this).attr('href');
+    $(document).scrollTo($(target), 800, {easing: "swing"});
+  });
+  $(".mobile-link").click(function (){
+    $('.button-collapse').sideNav('hide');
+  });
+});
