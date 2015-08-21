@@ -143,10 +143,6 @@ ul.bullet-ul li {
   margin-bottom: -20px;
 }
 
-.display-table-cell {
-  display: table-cell;
-}
-
 /* Banner Text Ticker START */
 .rw-wrapper {
 	position: relative;
@@ -262,20 +258,34 @@ ul.bullet-ul li {
 }
 
 /* main nav */
-.nav-wrapper {
-  display: inline-block;
+.nav-wrap {
+  display: inline-table;
   height: 60px;
 }
 
 .nav {
   padding: 0;
-  display: table;
+  display: inline-block;
   width: 100%;
   margin-bottom: -6px !important;
 }
 
 .nav-btn {
-  display: table-cell;
+  display: table-cell !important;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #EEE;
+  height: 60px;
+  vertical-align: middle;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: .5px;
+  border: none;
+  border-radius: 2px;
+}
+
+.nav-btn2 {
+  display: table-cell !important;
   padding-left: 8px;
   padding-right: 8px;
   color: #EEE;
