@@ -284,15 +284,6 @@ ul.bullet-ul li {
   border-radius: 2px;
 }
 
-.nav-btn2 {
-  display: table-cell !important;
-  padding-left: 8px;
-  padding-right: 8px;
-  color: #EEE;
-  height: 60px;
-  vertical-align: middle;
-}
-
 .nav-btn:hover {
   background-color: #1C1F25;
 }
