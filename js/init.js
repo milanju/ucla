@@ -55,4 +55,7 @@ $(document).ready(function(){
   $(".mobile-link").click(function (){
     $('.button-collapse').sideNav('hide');
   });
+
+  // Invisible navbar fix
+  $(".nav-btn").addClass( "display-table-cell" );
 });
