@@ -265,9 +265,7 @@ ul.bullet-ul li {
 
 .nav {
   padding: 0;
-  display: table;
   width: 100%;
-  margin-bottom: -6px !important;
 }
 
 .nav-btn {
@@ -275,7 +273,18 @@ ul.bullet-ul li {
   padding-right: 8px;
   color: #EEE;
   height: 60px;
+  line-height: 60px;
   vertical-align: middle;
+}
+
+a.nav-btn span {
+    display:inline;
+    display:inline-block;
+    vertical-align:middle;
+    line-height: 20px;
+    *margin-top: expression(
+      this.offsetHeight < this.parentNode.offsetHeight ?
+      parseInt((this.parentNode.offsetHeight - this.offsetHeight) / 2) + "px" : "0");
 }
 
 .nav-btn:hover {
@@ -283,7 +292,7 @@ ul.bullet-ul li {
 }
 
 .hvr-underline-from-center {
-  display: table-cell;
+  display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
