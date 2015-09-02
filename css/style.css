@@ -261,13 +261,14 @@ ul.bullet-ul li {
 .nav-wrap {
   display: inline-table;
   height: 60px;
+  border-spacing: 20px 0px;
+  border-collapse: separate;
 }
 
 .nav {
-  padding: 0;
+  padding: 10px;
   display: inline-block;
   width: 100%;
-  height: 60px;
   /*margin-bottom: -6px !important;*/
 }
 
@@ -283,6 +284,7 @@ ul.bullet-ul li {
   letter-spacing: .5px;
   border: none;
   border-radius: 2px;
+  background-color: #1565C0;
 }
 
 .nav-btn:hover {
